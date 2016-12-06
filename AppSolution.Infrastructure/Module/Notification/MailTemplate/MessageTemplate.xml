@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MessageTemplate>
+  <Template type ="Register">
+    <Title>
+      Tài khoản: {0} đã được đăng ký vào hệ thống
+    </Title>
+    <Body>
+      Xin chào, <b>{1}</b>,<br/>     
+      Tài khoản <b>{0}</b> đã được đăng ký vào hệ thống. Bạn đã có thể đăng nhập để sử dụng chương trình.
+      <br/>    
+      Best regards,<br/>
+      RichLife
+    </Body>
+  </Template>
+  <Template type ="PH">
+    <Title>
+      Bạn đã PH thành công
+    </Title>
+    <Body>
+      Xin chào, <b>{0}</b>,<br/>
+      Bạn đã tiến hành đăng ký PH thành công với số tiền {1}.
+      <br/>
+      Best regards,<br/>
+      RichLife
+    </Body>
+  </Template>
+  <Template type ="GH">
+    <Title>
+      Bạn đã GH thành công
+    </Title>
+    <Body>
+      Xin chào, <b>{0}</b>,<br/>
+      Bạn đã tiến hành GH thành công với số tiền {1}
+      <br/>
+      Best regards,<br/>
+      RichLife
+    </Body>
+  </Template>  
+<Template type ="PG">
+    <Title>
+      Lệnh PH-GH đã được thay đổi trạng thái
+    </Title>
+    <Body>
+      Xin chào, <b>{0}</b>,<br/>
+      Lệnh PH-GH đã được thay đổi trạng thái, hãy vào hệ thống để thực hiện.
+      <br/>
+      Best regards,<br/>
+      RichLife
+    </Body>
+  </Template>
+</MessageTemplate>

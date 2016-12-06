@@ -1,0 +1,19 @@
+2016-11-03 09:38:31,732 [6] DEBUG Method=Demo - Enter Method:{"Action":"Demo","EncryptData":"VAAAAB+LCAAAAAAABACrVgrJLMlJVbJSCsnILFYAohIQXyGtKD9XITknMzWvRElHyTe1uDgxHaTKIzUnJ19HoQSqOBcigaK8FgDExqwqVAAAAA=="}
+2016-11-03 09:38:32,057 [8] INFO  Method=RegisterBusinessBlock - - Invoked
+2016-11-03 09:38:32,076 [8] INFO  Method=SendNotificationBlock - - Invoked
+2016-11-03 09:39:14,513 [6] ERROR Method=Demo - Cannot send email to user
+AppSolution.Infrastructure.Core.AppException: Exception of type 'AppSolution.Infrastructure.Core.AppException' was thrown.
+   at AppSolution.Infrastructure.Core.BusinessTemplate.<>c__DisplayClass5_0.<Execute>b__0() in G:\Projects\HelpDesk\AppSolution.Infrastructure\Core\Api\BusinessTemplate.cs:line 42
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AppSolution.Infrastructure.Core.BusinessTemplate.<Execute>d__5.MoveNext() in G:\Projects\HelpDesk\AppSolution.Infrastructure\Core\Api\BusinessTemplate.cs:line 21
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at AppSolution.Mvc.ApiMethod.Controllers.AppController.<Post>d__0.MoveNext() in G:\Projects\HelpDesk\AppSolution.Mvc.ApiMethod\Controllers\AppController.cs:line 83
+2016-11-03 09:39:14,525 [6] DEBUG Method=Demo - Leave Method:{"Action":"Demo","EncryptData":"VAAAAB+LCAAAAAAABACrVgrJLMlJVbJSCsnILFYAohIQXyGtKD9XITknMzWvRElHyTe1uDgxHaTKIzUnJ19HoQSqOBcigaK8FgDExqwqVAAAAA=="}

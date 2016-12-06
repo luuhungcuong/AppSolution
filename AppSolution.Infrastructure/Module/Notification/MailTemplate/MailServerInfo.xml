@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServersList>
+  <Server ID = "Gmail">
+    <ServerAddress>smtp.gmail.com</ServerAddress>
+    <Port>587</Port>
+    <UseSSL>true</UseSSL>
+    <From>smtp.gmail.com</From>
+    <UseDefaultCredentials>*</UseDefaultCredentials>
+    <Credentials>
+      <UserName>hotro.richlife68</UserName>
+      <Password>abc@123!@#</Password>
+    </Credentials>
+    <FromEmail>hotro.richlife68@gmail.com</FromEmail>
+  </Server>
+</ServersList>

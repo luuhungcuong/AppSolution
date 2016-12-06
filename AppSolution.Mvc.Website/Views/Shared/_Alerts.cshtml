@@ -1,0 +1,28 @@
+﻿@using AppSolution.Infrastructure.Core
+@{
+    var alerts = TempData.ContainsKey(AppSolution.Infrastructure.Core.Alert.TempDataKey)
+                ? (List<AppSolution.Infrastructure.Core.Alert>)TempData[AppSolution.Infrastructure.Core.Alert.TempDataKey]
+                : new List<global::AppSolution.Infrastructure.Core.Alert>();
+
+    if (alerts.Any())
+    {
+        <br />
+    }
+
+    foreach (var alert in alerts)
+    {
+        <div onclick="javascript:Notify('@alert.Message' + '<br>' + 'Detail:' + '@Html.Encode(alert.MessageDetail)', 'top-right', '5000', '@alert.AlertStyle', 'fa-bolt', true);">
+            @using (Html.Bootstrap().Begin(new AppSolution.Mvc.Bootstrap.Alert().Style(alert.AlertStyle).Closeable(alert.Dismissable)))
+                {
+                <i class="fa-fw fa fa-warning"></i>
+                    <strong>Warning</strong>
+                    <span>@Html.Bootstrap().Label(alert.Message)</span>
+            }
+        </div>
+    }
+}
+
+@using (var context = Html.BeginScriptContext())
+{
+    context.AddScriptFile("/assets/js/toastr/toastr.js");
+}

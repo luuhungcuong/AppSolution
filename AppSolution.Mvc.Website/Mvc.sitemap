@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Dashboard" controller="Home" action="Index" imageUrl="glyphicon glyphicon-home" description="dashboard">        
+    <mvcSiteMapNode title="Incident Management" controller="Home" action="UIElements" imageUrl="fa fa-desktop" description="Incident Management">
+      <mvcSiteMapNode title="Add new incident" controller="Home" action="Elements" description="Add new incident"/>     
+      <mvcSiteMapNode title="Edit incident" controller="Home" action="Tabs" description="Edit incident"/>
+      <mvcSiteMapNode title="Remove incident" controller="Home" action="Alerts" description="Remove incident"/>
+      <mvcSiteMapNode title="Answer incident" controller="Home" action="Modals" description="Answer incident"/>
+      <mvcSiteMapNode title="Manage incident" controller="Home" action="Buttons" description="Manage incident"/>
+      <mvcSiteMapNode title="Knowledge database" controller="Home" action="NestableList" description="Knowledge database"/>      
+    </mvcSiteMapNode>       
+    <mvcSiteMapNode title="Knowledge database" controller="Home" action="Forms" imageUrl="fa fa-pencil-square-o" description="">
+      <mvcSiteMapNode title="Editor incident" controller="Home" action="FormLayouts" description="Layouts"/>
+      <mvcSiteMapNode title="Re-Editor incident" controller="Home" action="FormInputs" description="Inputs"/>
+      <mvcSiteMapNode title="Lookup database" controller="Home" action="DataPickers" description="Data Pickers"/>      
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Reporting" controller="Home" action="Charts" imageUrl="fa fa-bar-chart-o" description="">
+      <mvcSiteMapNode title="Lookup database" controller="Home" action="FlotCharts" description="attractive plotting"/>      
+    </mvcSiteMapNode>   
+    <mvcSiteMapNode title="Message" controller="Home" action="Mail" imageUrl="fa fa-envelope-o" description="">
+      <mvcSiteMapNode title="Inbox" controller="Home" action="Inbox" description="Beyond Mail"/>
+      <mvcSiteMapNode title="View Message" controller="Home" action="ViewMessage" description="Veiw Message"/>
+      <mvcSiteMapNode title="ComposeMessage" controller="Home" action="Compose" description="Compose Message"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Profile" controller="Home" action="Profile" imageUrl="fa fa-picture-o" description="User Profile"/>
+    <mvcSiteMapNode title="Calendar" controller="Home" action="Calendar" imageUrl="fa fa-calendar" description="Full Calendar"/>
+    <mvcSiteMapNode title="News" controller="Home" action="Pages" imageUrl="glyphicon glyphicon-paperclip" description="">
+      <mvcSiteMapNode title="Timeline" controller="Home" action="Timeline" description="Responsive Timeline"/>      
+    </mvcSiteMapNode>   
+  </mvcSiteMapNode>
+
+</mvcSiteMap>
